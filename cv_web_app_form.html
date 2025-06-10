@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج السيرة الذاتية</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+            direction: rtl;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .section-title {
+            font-size: 18px;
+            margin-top: 30px;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="section-title">🧍 المعلومات الشخصية</div>
+        <label>الاسم واللقب:</label>
+        <input type="text" name="full_name" required>
+
+        <label>تاريخ الميلاد:</label>
+        <input type="date" name="birth_date">
+
+        <label>مكان الميلاد:</label>
+        <input type="text" name="birth_place">
+
+        <label>الجنسية:</label>
+        <input type="text" name="nationality">
+
+        <label>الحالة الاجتماعية:</label>
+        <select name="marital_status">
+            <option>أعزب</option>
+            <option>متزوج</option>
+            <option>أخرى</option>
+        </select>
+
+        <label>الخدمة الوطنية:</label>
+        <input type="text" name="military_service">
+
+        <label>العنوان:</label>
+        <input type="text" name="address">
+
+        <label>رقم الهاتف:</label>
+        <input type="tel" name="phone">
+
+        <label>البريد الإلكتروني:</label>
+        <input type="email" name="email">
+
+        <div class="section-title">🎓 المؤهلات العلمية</div>
+        <textarea name="education" rows="4" placeholder="مثال: شهادة البكالوريا 2019، ليسانس في إدارة مالية..."></textarea>
+
+        <div class="section-title">🧑‍💼 الخبرات المهنية</div>
+        <textarea name="experience" rows="4" placeholder="مثال: تدريب في الرقابة المالية، تاجر خاص..."></textarea>
+
+        <div class="section-title">🌐 اللغات</div>
+        <label>اللغة العربية:</label>
+        <select name="arabic_level">
+            <option>ممتاز</option>
+            <option>متوسط</option>
+            <option>ضعيف</option>
+        </select>
+
+        <label>اللغة الفرنسية:</label>
+        <select name="french_level">
+            <option>ممتاز</option>
+            <option>متوسط</option>
+            <option>ضعيف</option>
+        </select>
+
+        <label>اللغة الإنجليزية:</label>
+        <select name="english_level">
+            <option>ممتاز</option>
+            <option>متوسط</option>
+            <option>ضعيف</option>
+        </select>
+
+        <div class="section-title">🎯 الاهتمامات والهوايات</div>
+        <textarea name="interests" rows="3" placeholder="مثال: كرة القدم، السفر، المطالعة..."></textarea>
+
+        <button type="submit">إرسال</button>
+    </form>
+</body>
+</html>
